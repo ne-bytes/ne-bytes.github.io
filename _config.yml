@@ -1,0 +1,11 @@
+# meta
+name: "NE Bytes"
+
+# options
+permalink: /:year/:month/:day/:title/
+paginate: 12
+syntax-theme: zenburn
+
+# css processing
+sass:
+  style: compressed
