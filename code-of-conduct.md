@@ -19,6 +19,6 @@ including warning the offender, expulsion from the NE Bytes community. If you ar
 else is being harassed, or have any other concerns, please contact an NE Bytes organizer immediately, or as soon as you 
 feel comfortable doing so.
 
-If you have questions or feedback about this Code of Conduct please contact one of the organizers.
+**If you have questions or feedback about this Code of Conduct please contact one of the organizers.**
 
 This Code of Conduct, like its inspiration from the Portland Python User Group, is licensed under the [Creative Commons Zero](https://creativecommons.org/choose/zero/) license.
