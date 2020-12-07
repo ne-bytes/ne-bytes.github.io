@@ -1,2 +1,3 @@
 # ne-bytes
-public web pages
+public web pages for nebytes.net
+
