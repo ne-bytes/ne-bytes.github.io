@@ -1,26 +1,41 @@
 ---
 layout: default
-title: NE Bytes | Microsoft Technology Usergroup in the North East of England
 ---
 <section class="hero is-medium is-primary is-bold">
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        We are a Microsoft Technology Usergroup in the North East of England
+        {{ site.title }}
       </h1>
       <h2 class="subtitle">
-        Microsoft Technology Usergroup in the North East of England
+        {{ site.description }}
       </h2>
     </div>
   </div>
 </section>
 
-## Latest Events
-card 
+<section>
+  <h2>Latest Events</2>
 
-# last two where they are tagged as events
-{{ site.posts.first }}
-
+  {% comment %}
+  {{ site.posts.first }}
+  {% endcomment %}
+  
+  {% for post in site.posts limit:2 %}
+  <div class="card">
+    <header class="card-header">
+      <p class="card-header-title">
+        {{ post.title }}
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="content">
+        {{ page.excerpt }}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</section>  
 
 Who we are 
 
