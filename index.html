@@ -7,37 +7,39 @@ layout: default
       <h1 class="title is-size-1">
         {{ site.data.meta.title }}
       </h1>
-      <h2 class="subtitle">
-        {{ site.data.meta.description }}
-      </h2>
     </div>
   </div>
 </section>
 
-<section>
+<section class="section">
   <div class="container">
-  <h2>Latest Events</2>
-
-  {% comment %}
-  {{ site.posts.first }}
-  {% endcomment %}
-  
-  {% for post in site.posts limit:2 %}
-  <div class="card">
-    <header class="card-header">
-      <p class="card-header-title">
-        {{ post.title }}
-      </p>
-    </header>
-    <div class="card-content">
-      <div class="content">
-        {{ post.excerpt }}
-        <a href="{{ post.url }}">details</a>
+    <div class="columns">
+      <div class="column">
+        {{ site.data.meta.description }}
       </div>
-    </div>
-  </div>
-  {% endfor %}
-  </div>
+      <div class="column">
+        <h2>Latest Events</2>
+        {% comment %}
+        {{ site.posts.first }}
+        {% endcomment %}
+
+        {% for post in site.posts limit:2 %}
+        <div class="card">
+          <header class="card-header">
+            <p class="card-header-title">
+              {{ post.title }}
+            </p>
+          </header>
+          <div class="card-content">
+            <div class="content">
+              {{ post.excerpt }}
+              <a href="{{ post.url }}">details</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        </div>
+    </div> 
 </section>  
 
 Who we are 
