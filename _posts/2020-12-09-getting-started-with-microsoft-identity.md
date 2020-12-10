@@ -2,8 +2,8 @@
 layout: event
 title: Getting Started with Microsoft Identity
 speakers: [ Christos Matskas ]
-date: 9th December 2020
-time: 7pm to 8pm
+eventdate: 9th December 2020
+eventtime: 7pm to 8pm
 location: Online
 register: https://ti.to/ne-bytes/december-2020-getting-started-with-microsoft-identity
 ---
