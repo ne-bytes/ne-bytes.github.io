@@ -2,6 +2,8 @@
 layout: default
 title: NE Bytes Code of Conduct
 ---
+<section class="section">
+  <div class="container">
 # Code of Conduct 
 
 With thanks to the [Portland Python User Group](https://www.meetup.com/pdxpython/pages/12061872/Code_of_Conduct/)
@@ -27,3 +29,6 @@ feel comfortable doing so.
 
 This Code of Conduct, like its inspiration from the Portland Python User Group, is licensed 
 under the [Creative Commons Zero](https://creativecommons.org/choose/zero/) license.
+
+  </div>
+</section>
