@@ -6,5 +6,30 @@
 
   <title>{% if page.title %}{{ page.title | strip_html }} | {% endif %}{{ site.data.meta.title | strip_html }}</title>
   
-  <link rel="stylesheet" href="{{ site.url }}/css/{{ site.docs_file }}.css?v={{ site.time | date: "%Y%m%d%H%M" }}">
+  <link rel="stylesheet" href="{{ site.url }}/css/site.css">
   
+  <!-- twitter ->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@NEBytes">
+  <meta name="twitter:creator" content="@NEBytes">
+  {% if page.title %}
+  <meta name="twitter:title" content="{{ page.title | replace: '&nbsp;', ' ' | strip_html }}">
+  {% else %}
+  <meta name="twitter:title" content="{{ site.data.meta.title }}">
+  {% endif %}
+  {% if page.layout == 'post' %}
+  <meta name="twitter:description" content="{{ page.content | strip_html | truncate: 400, '…' }}">
+  {% else %}
+  <meta name="twitter:description" content="{{ site.data.meta.description }}">
+  {% endif %}
+
+  <!-- image share TODO -->
+  <!-- /twitter ->
+  
+  <!-- favicons -->
+  <!-- /favicons -->
+  
+  <!-- RSS/Atom -->
+  <!-- /RSS/Atom -->
+  
+</head>  

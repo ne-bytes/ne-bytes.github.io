@@ -1,3 +1,7 @@
+---
+layout: default
+title: NE Bytes Code of Conduct
+---
 # Code of Conduct 
 
 With thanks to the [Portland Python User Group](https://www.meetup.com/pdxpython/pages/12061872/Code_of_Conduct/)
@@ -21,4 +25,5 @@ feel comfortable doing so.
 
 **If you have questions or feedback about this Code of Conduct please contact one of the organizers.**
 
-This Code of Conduct, like its inspiration from the Portland Python User Group, is licensed under the [Creative Commons Zero](https://creativecommons.org/choose/zero/) license.
+This Code of Conduct, like its inspiration from the Portland Python User Group, is licensed 
+under the [Creative Commons Zero](https://creativecommons.org/choose/zero/) license.
