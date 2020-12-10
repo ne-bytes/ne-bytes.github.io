@@ -4,6 +4,6 @@ title: NE Bytes | Microsoft Technology Usergroup in the North East of England
 ---
 <section class="section">
   <div class="container">
-    Hello World
+    # NE Bytes
   </div>
 </section>  

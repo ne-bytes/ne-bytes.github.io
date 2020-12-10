@@ -8,6 +8,9 @@
   
   <link rel="stylesheet" href="{{ site.url }}/css/site.css">
   
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.data.meta.title }}" href="{{ "/atom.xml" | prepend: site.url }}">
+  
   <!-- twitter ->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@NEBytes">

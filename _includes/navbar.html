@@ -1,13 +1,27 @@
 <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: Free, open source, and modern CSS framework based on Flexbox" width="112" height="28">
+    <a class="navbar-item" href="{{ site.url }}">
+      <img src="{{ site.url }}/images/ne-bytes-logo.png" alt="NE Bytes: Microsoft Technology Usergroup in the North East of England">
     </a>
 
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarContent">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
     </a>
+  </div>
+  
+  <div id="navbarContent" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+      <a class="navbar-item">
+        About
+      </a>
+      <a class="navbar-item">
+        Code of Conduct
+      </a>
+    </div>
   </div>
 </nav>
