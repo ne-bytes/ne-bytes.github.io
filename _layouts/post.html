@@ -11,6 +11,16 @@
     {% if page.speakers %}
     <h2>{% for speaker in page.speakers %}{{ speaker }}{% endfor %}</h2> 
     {% endif %}
+    {%if page.location %}
+    {{ page.location }}
+    {% endif %}
+    {%if page.date %}
+    {{ page.date }}
+    {% endif %}
+    {%if page.time %}
+    {{ page.time }}
+    {% endif %}
+    
 {{ content }}
   </div>
 </section>  
