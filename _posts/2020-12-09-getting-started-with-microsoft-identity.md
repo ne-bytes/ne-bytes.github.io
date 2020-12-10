@@ -2,7 +2,6 @@
 layout: post
 title: Getting Started with Microsoft Identity
 ---
-
 # Getting Started with Microsoft Identity
 ## Christos Matskas
 
