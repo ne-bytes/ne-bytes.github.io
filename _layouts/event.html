@@ -13,14 +13,14 @@
       {% if page.speakers %}
       <tr><td>Speakers</td><td>{% for speaker in page.speakers %}{{ speaker }}{% endfor %}</td></tr>
       {% endif %}
-      {%if page.date %}
-      <tr><td>Date</td><td>{{ page.date }}</td></tr>
+      {%if page.eventdate %}
+      <tr><td>Date</td><td>{{ page.eventdate }}</td></tr>
       {% endif %}
-      {%if page.time %}
-      <tr><td>Time</td><td>{{ page.time }}</td></tr>
+      {%if page.eventtime %}
+      <tr><td>Time</td><td>{{ page.eventtime }}</td></tr>
       {% endif %}
       {%if page.location %}
-      <tr><td>Time</td><td>{{ page.location }}</td></tr>
+      <tr><td>Location</td><td>{{ page.location }}</td></tr>
       {% endif %}
       </tbody>
     </table>
