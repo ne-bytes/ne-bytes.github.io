@@ -1,5 +1,11 @@
-Our sponsors
-
+<section>
+  <h1>Our sponsors</h1>
+  <div >
+      {% for sponsor in site.data.sponsors %}
+      {{ sponsor.name }} {{ sponsor.link }} 
+      {% endfor %}
+    </div>
+</section>  
 Sage
 DevExpress
 Event Hosting
