@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" >
+{% include head.html %}
+<body class="has-navbar-fixed-top">
+{% include navbar.html %}  
+<section class="section">
+  <div class="container"> 
+    {% if page.title %}
+    <h1>{{ page.title }}</h1>
+    {% endif %}
+    <table>
+      <tbody>
+      {% if page.speakers %}
+      <tr><td>Speakers</td><td>{% for speaker in page.speakers %}{{ speaker }}{% endfor %}</td></tr>
+      {% endif %}
+      {%if page.date %}
+      <tr><td>Date</td><td>{{ page.date }}</td></tr>
+      {% endif %}
+      {%if page.time %}
+      <tr><td>Time</td><td>{{ page.time }}</td></tr>
+      {% endif %}
+      {%if page.location %}
+      <tr><td>Time</td><td>{{ page.location }}</td></tr>
+      {% endif %}
+      </tbody>
+    </table>
+{{ content }}
+      {%if page.event %}
+      <a href="{{ page.event }}">Register Here</a>
+      {% endif %}
+  </div>
+</section>  
+{% include footer.html %}
+</body>
+</html>
