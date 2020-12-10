@@ -11,16 +11,19 @@
     <table>
       <tbody>
       {% if page.speakers %}
-      <tr><td>Speakers</td><td>{% for speaker in page.speakers %}{{ speaker }}{% endfor %}</td></tr>
+      <tr><td>Speakers</td><td class="has-text-weight-bold">{% for speaker in page.speakers %}{{ speaker }}{% endfor %}</td></tr>
       {% endif %}
       {%if page.eventdate %}
-      <tr><td>Date</td><td>{{ page.eventdate }}</td></tr>
+      <tr><td>Date</td><td class="has-text-weight-bold">{{ page.eventdate }}</td></tr>
       {% endif %}
       {%if page.eventtime %}
-      <tr><td>Time</td><td>{{ page.eventtime }}</td></tr>
+      <tr><td>Time</td><td class="has-text-weight-bold">{{ page.eventtime }}</td></tr>
       {% endif %}
       {%if page.location %}
-      <tr><td>Location</td><td>{{ page.location }}</td></tr>
+      <tr><td>Location</td><td class="has-text-weight-bold">{{ page.location }}</td></tr>
+      {% endif %}
+      {%if page.register %}
+      <tr><td>Location</td><td class="has-text-weight-bold"><a href="{{ page.register }}">Register Here</a></td></tr>
       {% endif %}
       </tbody>
     </table>
