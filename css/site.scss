@@ -11,3 +11,14 @@
 @import "fa/fontawesome.scss";
 @import "fa/solid.scss";
 @import "fa/brands.scss";
+
+// Colours
+
+$blue: #017dc5; 
+$gold: #fec401;
+$white: #ffffff;
+
+#navbar {
+	background-color: $blue;
+	color: $white;
+}
