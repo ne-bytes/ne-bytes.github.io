@@ -4,6 +4,7 @@ title: NE Bytes Code of Conduct
 ---
 <section class="section">
   <div class="container">
+    
 # Code of Conduct 
 
 With thanks to the [Portland Python User Group](https://www.meetup.com/pdxpython/pages/12061872/Code_of_Conduct/)
