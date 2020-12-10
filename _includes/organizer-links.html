@@ -1,3 +1,8 @@
 <div id="organizer-links" class="content has-text-centered">
-  <a href="{{ site.data.meta.twitter }}">NE Bytes</a> | <a href="https://twitter.com/deejaygraham">Derek</a> | <a href="https://twitter.com/BrettMiller_IT">Brett</a>
+  <a href="{{ site.data.meta.twitter }}">NE Bytes</a> 
+  {% for admin in site.data.organizers %}
+    <a href="{{ admin.twitter }}">
+      {{ admin.name }}
+    </a> | 
+{% endfor %}
 </div>
