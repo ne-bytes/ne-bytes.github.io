@@ -1,21 +1,30 @@
 <!-- sub footer -->
 
-<!-- Get Involved
-
-Suggest a talk
-Speak at an event
-
-About Us
-
+<!--
+<div class="columns">
+  <div class="column">
+    <h4>Get Involved</h4>
+    <ul>
+      <li>Suggest a topic</li>
+      Speak at an event
+    </ul>  
+  </div>
+  <div class="column">
+    <h4>About Us</h4>
 FAQ
 Sponsors
 Code of Conduct
+  </div>
+</div>
 -->
 <!-- /sub footer -->
 
-
 <!-- footer -->
 <footer class="footer">
+  {% include organizer-links.html %}
+  <div class="content has-text-centered">
+    <a href="{{ site.url }}/code-of-conduct/">Code of Conduct</a> | <a href="{{ site.url }}/events/">Events</a>
+  </div>
   <div class="content has-text-centered">
     <p>&copy; 2020 NE Bytes
     </p>
@@ -25,5 +34,6 @@ Code of Conduct
 <!-- /footer -->
 
 <!-- JavaScript -->
-
+<!-- burger menu -->
+<script async type="text/javascript" src="{{ site.url }}/js/bulma.js"></script>
 <!-- /JavaScript -->
