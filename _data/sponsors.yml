@@ -1,5 +1,8 @@
 - name: Sage UK
   url: https://sage.com
+  logo: sage-logo.png
+  description: Over one million British businesses use our award-winning software to manage accounting, finances, payroll, operations and people.
 - name: Scott Logic
   url: https://www.scottlogic.com
- 
+  logo: scott-logic-logo.svg
+  description: We transform our clients’ businesses by engineering innovative, bespoke software solutions that drive measurable value, whilst also enhancing the core strengths of their technology delivery capability.
