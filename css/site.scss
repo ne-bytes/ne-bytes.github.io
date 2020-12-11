@@ -17,4 +17,33 @@
 $blue: #017dc5; 
 $gold: #fec401;
 $white: #ffffff;
+$gray: #a6a4a4;
+$darker-gold: #b18131;
+$mid-gold: #d39d21;
 
+
+$matisse: #1A6C98;
+$aths-special: #EBEAD0;
+$gold-tips: #E5B419;
+$sand-dune: #806E5F;
+
+body {
+    font-weight: 200;
+}
+
+p {
+    margin: 2em 0;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-lightest-gray {
+    background-color: #F7F8FA;
+}
+
+.bg-darkest-gray {
+    background-color: #374252;
+    color: #fff;
+}
