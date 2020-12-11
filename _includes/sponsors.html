@@ -3,7 +3,7 @@
   <tbody>
     {% for sponsor in site.data.sponsors %}
     <tr>
-      <td><a href="{{ sponsor.url }}"><img src="{{ site.url }}/images/{{ sponsor.logo }}" /></td>
+      <td><a href="{{ sponsor.url }}" target="_blank"><img src="{{ site.url }}/images/{{ sponsor.logo }}" /></td>
       <td>{{ sponsor.description }}</td>
     </tr>
     {% endfor %}
