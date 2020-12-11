@@ -22,15 +22,12 @@
       {%if page.location %}
       <tr><td>Location</td><td><strong>{{ page.location }}</strong></td></tr>
       {% endif %}
-      {%if page.register %}
-      <tr><td>Register</td><td><a href="{{ page.register }}">Registration Page</a></td></tr>
-      {% endif %}
       </tbody>
     </table>
 {{ content }}
     <hr />
       {%if page.register %}
-      <a href="{{ page.event }}">Register Here</a>
+      <button class="button is-primary">a href="{{ page.event }}">Register Here</a></button>
       {% endif %}
   </div>
 </section>  
