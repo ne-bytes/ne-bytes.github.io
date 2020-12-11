@@ -1,11 +1,10 @@
-<section>
-  <h1>Our sponsors</h1>
-  <div >
-      {% for sponsor in site.data.sponsors %}
-      {{ sponsor.name }} {{ sponsor.link }} 
-      {% endfor %}
-    </div>
-</section>  
-Sage
-DevExpress
-Event Hosting
+<table class="table">
+  <tbody>
+    {% for sponsor in site.data.sponsors %}
+    <tr>
+      <td><a href="{{ sponsor.url }}"><img src="{{ site.url }}/images/{{ sponsor.logo }}" /></td>
+      <td>{{ sponsor.description }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
