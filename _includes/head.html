@@ -11,13 +11,19 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.data.meta.title }}" href="{{ "/atom.xml" | prepend: site.url }}">
   
-  <!-- twitter ->
+  <!-- sharing metadata ->
+  <meta property="og:site_name" content="NE Bytes">
+  <meta property="og:url content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.meta.description }}{% endif %}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@NEBytes">
   <meta name="twitter:creator" content="@NEBytes">
   {% if page.title %}
+  <meta property="og:title" content="{{ page.title | replace: '&nbsp;', ' ' | strip_html }}">
   <meta name="twitter:title" content="{{ page.title | replace: '&nbsp;', ' ' | strip_html }}">
   {% else %}
+  <meta property="og:title" content="{{ site.data.meta.title }}">
   <meta name="twitter:title" content="{{ site.data.meta.title }}">
   {% endif %}
   {% if page.layout == 'post' %}
@@ -27,7 +33,7 @@
   {% endif %}
 
   <!-- image share TODO -->
-  <!-- /twitter ->
+  <!-- /sharing metadata ->
   
   <!-- favicons -->
   <!-- /favicons -->
