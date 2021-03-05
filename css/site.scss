@@ -51,6 +51,10 @@ p {
 }
 
 .has-bg-img {
-    background: url('/images/quayside.jpeg') center center; 
+    background-image: url('/images/quayside.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
+    background-color: #999;
 }
