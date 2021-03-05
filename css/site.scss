@@ -49,3 +49,8 @@ p {
     background-color: #374252;
     color: #fff;
 }
+
+.has-bg-img {
+    background: url('/images/quayside.jpeg') center center; 
+    background-size: cover;
+}
