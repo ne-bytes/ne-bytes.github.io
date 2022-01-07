@@ -24,6 +24,10 @@ Meetings are held at Campus North http://campusnorth.co.uk/. You can find direct
 Occasionally, meetings are held at Newcastle University.  We are very grateful to the University for providing this facility to us.  http://www.ncl.ac.uk/travel/maps/navigator.php?type=&bldg=16&go.x=12&go.y=10
 -->
 
+<span class="icon">
+  <i class="fas fa-home"></i>
+</span>
+
 What Does it Cost?
 
 Nothing, Zilch, Nada!  All of our meetings are free to attend, we don’t intend to charge for any of our meetings.  We provide our time for organising and arranging our events.  Speakers kindly offer their time for free.
