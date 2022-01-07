@@ -36,12 +36,18 @@ North East Bytes was co-founded by Andrew Westgarth, Jonathan Noble, Damien Fogg
 
 
 
-Damien Foggon
+<details>
+  <summary>Damien Foggon</summary>
+  Damien Foggon is a developer, writer, and technical reviewer in cutting-edge technologies and has contributed to more than 50 books on .NET, C#, Visual Basic and ASP.NET. He is a multiple MCPD in .NET 2.0 and .NET 3.5 and is hoping that he can contribute something to the North East developer community. 
 
-Damien Foggon is a developer, writer, and technical reviewer in cutting-edge technologies and has contributed to more than 50 books on .NET, C#, Visual Basic and ASP.NET. He is a multiple MCPD in .NET 2.0 and .NET 3.5 and is hoping that he can contribute something to the North East developer community. 
+  <ol>
+    <li>Blog: http://blog.littlepond.co.uk
+      Twitter: http://twitter.com/foggonda
+    </li>
+    <li></li>
+  </ol>
+</details>
 
-Blog: http://blog.littlepond.co.uk
-Twitter: http://twitter.com/foggonda
 
 
 
