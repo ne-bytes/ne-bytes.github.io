@@ -39,22 +39,6 @@ Who are North East Bytes?
 North East Bytes was co-founded by Andrew Westgarth, Jonathan Noble, Damien Foggon and Ben Lee in late 2009.  They wanted to create a group which catered for Developers and IT Pros in the region and there key aim was to provide the group for free.
 
 
-
-<details>
-  <summary>Damien Foggon</summary>
-  Damien Foggon is a developer, writer, and technical reviewer in cutting-edge technologies and has contributed to more than 50 books on .NET, C#, Visual Basic and ASP.NET. He is a multiple MCPD in .NET 2.0 and .NET 3.5 and is hoping that he can contribute something to the North East developer community. 
-
-  <ol>
-    <li>Blog: http://blog.littlepond.co.uk
-      Twitter: http://twitter.com/foggonda
-    </li>
-    <li></li>
-  </ol>
-</details>
-
-
-
-
 Derek Graham
 
 
@@ -71,39 +55,10 @@ Twitter: http://twitter.com/deejaygraham
   <div class="container"> 
     <h2 class="title is-size-2">Our Founders</h2>
 
-    <h3>Andrew Westgarth</h3>
-Pic!!!
-    
-    https://about.me/apwestgarth
-    
-    Andrew Westgarth is a Technical Architect at Sage (UK) Ltd working on large scale web applications.  
-    Andrew is very active in the UK Developer Community, attending and speaking at multiple events, supporting users and other User Groups. 
-    In the past he has spoken at the Irish Microsoft Technology Conference, VBUG&#39;s National Two Day Conference; Developer Developer Developer 
-    Day 5 and local User Group meetings. Andrew has experience in VB6/.NET; C#; ASP.NET and Internet Information Services. Andrew&#39;s current technical 
-    interests include IIS 8.0/7.5/7.0, IIS Extensions and Windows Azure; Personal Performance Improvement and Best Practices.
-
-mvp[1]Blog: http://www.andrewwestgarth.co.uk/blog
-Twitter: http://twitter.com/apwestgarth
 
  
 
-Jonathan Noble
 
-jon[1]Jonathan started his career in IT early, being kept out of primary school assemblies in order to show teachers how to use BBC Model Bs. 
-    After watching Top Gun too many times, and a less than fun part-time job in PC World, he nearly gave up computing and became a fighter pilot, but was somehow drawn back to the keyboard and has spent the last decade managing Windows systems at Newcastle University. His primary focus is management and automation around Windows Server products, Active Directory and Exchange; mainly using PowerShell. A blogger for many years and Twitter addict, Jonathan became an active member of the PowerShell community from early in its life and received Microsoft MVP awards in July 2009 and January 2012. He is also a member of the TechNet UK Community Council. When he's not writing PowerShell scripts, he's a massive fan of basketball; both the NBA and the Newcastle Eagles.
-
-mvp[1]Blog: http://www.jonoble.com
-Twitter: http://twitter.com/jonoble
 
  
-
-Ben Lee
-
-Ben_profile_picBen is a Senior Consultant for an IT services and consulting company called Waterstons based in Durham. He specialises in Microsoft enterprise products such as System Center and ISA server. Ben also has an interest in automation technologies and network security; some of his recent projects have involved Configuration Manager and PKI implementations. Before joining Waterstons at the start of 2009, Ben worked as Systems Administrator for the North East Chambers of Commerce. Ben has not been officially involved in the IT Pro community before but is excited to be involved with NEBytes and is looking forward to helping from the community in the North East.
-
-Blog: http://www.bibble-it.com
-Twitter: http://twitter.com/bibbleq
-
- </div>
-</section>
 
