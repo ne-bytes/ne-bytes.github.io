@@ -38,7 +38,10 @@ Who are North East Bytes?
 
 North East Bytes was co-founded by Andrew Westgarth, Jonathan Noble, Damien Foggon and Ben Lee in late 2009.  They wanted to create a group which catered for Developers and IT Pros in the region and there key aim was to provide the group for free.
 
-
+<div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent is-vertical">
 {% include andrew.html %}
 {% include ben.html %}
 {% include brett.html %}
@@ -46,6 +49,10 @@ North East Bytes was co-founded by Andrew Westgarth, Jonathan Noble, Damien Fogg
 {% include derek.html %}
 {% include john.html %}
 {% include jonathan.html %}
+      </div>
+    </div>
+  </div>
+</div>
 
 Derek Graham
 
