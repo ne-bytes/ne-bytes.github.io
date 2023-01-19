@@ -1,0 +1,27 @@
+{
+  "name": "ne-bytes.github.io",
+  "version": "1.0.0",
+  "description": "ne bytes homepage",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ne-bytes/ne-bytes.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ne-bytes/ne-bytes.github.io/issues"
+  },
+  "homepage": "https://github.com/ne-bytes/ne-bytes.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "markdown-it-anchor": "^8.6.6"
+  },
+  "dependencies": {
+    "bulma": "^0.9.4"
+  }
+}
