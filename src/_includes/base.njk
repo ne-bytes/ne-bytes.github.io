@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="canonical" href="{[ meta.url ]}/" />
+    <link rel="canonical" href="{{ meta.url }}/" />
     <meta property="og:site_name" content="{{ meta.siteName }}" />
     <meta property="og:title" content="{{ meta.siteTitle }}" />
     <meta property="og:type" content="website" />
@@ -19,14 +19,11 @@
     <meta name="twitter:description" content="{{ meta.siteDescription }}" />
     <meta property="og:description" content="{{ meta.siteDescription }}" />
     <link rel="stylesheet" href="{{ meta.url }}/css/bulma.min.css">
+    <link rel="stylesheet" href="{{ meta.url }}/css/main.css">
     <link rel="icon" href="{{ meta.url }}/favicon.ico">
     <link rel="manifest" href="{{ meta.url }}/app.webmanifest" />
 <head>
 <body>
-    <header>
-        <h1>{{ title }}</h1>
-    </header>
-
     <nav class="navbar is-transparent is-light" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item" href="{{ meta.url }}"><img src="{{ meta.url }}/img/logo.webp" ></a>
@@ -40,21 +37,13 @@
         <div id="navbarExpanded" class="navbar-menu">
             <div class="navbar-start">
             {# TODO - js to toggle burger #}
-                <a class="navbar-item" href="/index.html#who">About Us</a>
-                <a class="navbar-item" href="/index.html#what">Next Meeting</a>
-                <a class="navbar-item" href="/index.html#where">Location</a>
-                <a class="navbar-item" href="/index.html#code">Code of Conduct</a>
-                <a class="navbar-item" href="/index.html#sponsors">Sponsors</a>
-                <a class="navbar-item" href="/index.html#contact">Contact Us</a>
-                <a class="navbar-item" href="/blog/">Events</a>
+                <!-- <a class="navbar-item" href="{{ meta.url }}/index.html#who">About Us</a> -->
+                <a class="navbar-item" href="{{ meta.url }}/index.html#what">Next Meeting</a>
+                <a class="navbar-item" href="{{ meta.url }}/index.html#where">Location</a>
+                <a class="navbar-item" href="{{ meta.url }}/index.html#code">Code of Conduct</a>
+                <a class="navbar-item" href="{{ meta.url }}/index.html#sponsors">Sponsors</a>
+                <a class="navbar-item" href="{{ meta.url }}/blog/">Events</a>
             </div>
-        </div>
-
-        <div class="navbar-end">
-        {# TODO Put in footer and use metadata #}
-            <a class="navbar-item" href="{{ meta.social.tito }}">Tito</a>
-            <a class="navbar-item" href="{{ meta.social.twitter }}">Twitter</a>
-            <a class="navbar-item" href="{{ meta.social.youtube }}">You Tube</a>
         </div>
       </div>
     </nav>
@@ -62,10 +51,14 @@
     <main>
         {{ content | safe }}
     </main>
-    <footer class="footer">
-        <div class="content has-text-centered">
-            &copy  {# TODO #}
-        </div>    
+    <footer class="footer has-background-dark">
+        <section class="container">
+            <ul>
+                <li><span>See events on <a class="navbar-item" href="{{ meta.social.tito }}">Tito</a></span></li>
+                <li><span>Follow us on <a class="navbar-item" href="{{ meta.social.twitter }}">Twitter</a></span></li>
+                <li><span>See past events on <a class="navbar-item" href="{{ meta.social.youtube }}">You Tube</a></span></li>
+            </ul>
+        </section>    
     </footer>
 </body>    
 </html>

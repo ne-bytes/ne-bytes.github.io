@@ -2,65 +2,109 @@
 layout: "base.njk"
 title: NE Bytes
 ---
+{# TODO Match colours to logo #}
+<section class="hero is-default is-bold is-info">
+    <div class="hero-body">
+        <p class="title">
+            {{ meta.siteName }}
+        </p>
+        <p class="subtitle">
+            {{ meta.siteDescription }}
+        </p>
+    </div>
+</section>
 
 {# Intro #}
-<div class="container">
+{#<div class="container">
 <section class="section" id="who">
     <p>{{ meta.siteDescription }}</p>
     </section>
 </div>
+#}
 
 {# Most Recent Blog Post #}
-<div class="container">
-    <section class="section" id="what">
-    {% set latest_posts = collections.posts | reverse %}
-    {% for post in latest_posts.slice(0,1) %}
-        <h1 class="title"><a href="{{ post.data.url | url }}">{{ post.data.title }}</a></h1>
+<section class="section is-medium" id="what">
+    <div class="container">
+        {% set latest_posts = collections.posts | reverse %}
+        {% for post in latest_posts.slice(0,1) %}
+        <div class="has-text-centered">
+            <h1 class="title is-2"><a href="{{ meta.url }}{{ post.url }}">{{ post.data.title }}</a></h1>
+        </div>
         {{ post.templateContent | safe }}
-    {% endfor %}
-    </section>
-</div>
+        {% endfor %}
+    </div>
+</section>    
+
+{# Location #}
+<section class="section is-medium has-background-light" id="where">
+    <div class="container">
+        <div class="has-text-centered">
+            <h1 class="title is-2">Location</h1>
+        </div>
+        <p>We have been a virtual group meeting through Microsoft Teams since the start of the 
+            COVID-19 pandemic. We will remain virtual for the short-tem but regularly re-evaluate 
+            with the hope of going back to in-person meet-ups soon. 
+        </p>
+        {# TODO - need to draw attention to this !#}
+        <p>We need a new venue! If you can offer us space for one evening a month, please <a href="{{ meta.email }}">get in touch</a>.</p>
+
+        {# TODO - need to draw attention to this !#}
+        <p>We meet on the third Wednesday of every month except in December where we meet on the second Wednesday.</p>
+        <p>Each meeting usually consists of two one hour long sessions from speakers from the UK, Europe and beyond. One session will 
+        cover a Development topic and the second an IT Pro topic.</p>
+        <p>In between, there is a 30 minute break for food, refreshments and time for you to chat with the other attendees.</p>
+       
+    </div>
+</section>
 
 {# Code of Conduct #}
-<div class="container">
-    <section class="section" id="code">
-    <h1 class="title">Code of Conduct</h1>
-    <p>With thanks to the <a href="https://www.meetup.com/pdxpython/pages/12061872/Code_of_Conduct/">Portland Python User Group</a></p>
-    <p>NE Bytes is dedicated to providing a harassment-free community for everyone, regardless of sex, gender identity or expression, sexual 
-        orientation, disability, physical appearance, age, body size, race, nationality, or religious beliefs. We do not tolerate harassment of 
-        community members in any form. Participants violating these rules may be sanctioned or expelled from the community at the discretion of 
-        the NE Bytes organizers.</p>
-    <p>Harassment includes offensive verbal or written comments related to sex, gender identity or expression, sexual orientation, disability, 
-        physical appearance, age, body size, race, nationality, or religious beliefs, deliberate intimidation, threats, stalking, following, 
-        harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual 
-        attention. Sexual language and imagery is not appropriate for any NE Bytes event or communication channel. Community members asked to stop 
-        any harassing behavior are expected to comply immediately.</p>
-    <p>If a community member engages in harassing behavior, the NE Bytes organizers may take any action they deem appropriate, including warning the 
-        offender, expulsion from the NE Bytes community. If you are being harassed, notice that someone else is being harassed, or have any other 
-        concerns, please contact an NE Bytes organizer immediately, or as soon as you feel comfortable doing so.</p>
-    <p>If you have questions or feedback about this Code of Conduct please contact one of the organizers.</p>
-    <p>This Code of Conduct, like its inspiration from the Portland Python User Group, is licensed under the Creative Commons Zero license.</p>
-    </section>
-</div>
+<section class="section is-medium" id="code">
+    <div class="container">
+        <div class="has-text-centered">
+            <h1 class="title is-2">Code of Conduct</h1>
+        </div>
+        <p>With thanks to the <a href="https://www.meetup.com/pdxpython/pages/12061872/Code_of_Conduct/">Portland Python User Group</a></p>
+        <p>NE Bytes is dedicated to providing a harassment-free community for everyone, regardless of sex, gender identity or expression, sexual 
+            orientation, disability, physical appearance, age, body size, race, nationality, or religious beliefs. We do not tolerate harassment of 
+            community members in any form. Participants violating these rules may be sanctioned or expelled from the community at the discretion of 
+            the NE Bytes organizers.</p>
+        <p>Harassment includes offensive verbal or written comments related to sex, gender identity or expression, sexual orientation, disability, 
+            physical appearance, age, body size, race, nationality, or religious beliefs, deliberate intimidation, threats, stalking, following, 
+            harassing photography or recording, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual 
+            attention. Sexual language and imagery is not appropriate for any NE Bytes event or communication channel. Community members asked to stop 
+            any harassing behavior are expected to comply immediately.</p>
+        <p>If a community member engages in harassing behavior, the NE Bytes organizers may take any action they deem appropriate, including warning the 
+            offender, expulsion from the NE Bytes community. If you are being harassed, notice that someone else is being harassed, or have any other 
+            concerns, please contact an NE Bytes organizer immediately, or as soon as you feel comfortable doing so.</p>
+        <p>If you have questions or feedback about this Code of Conduct please contact one of the organizers.</p>
+        <p>This Code of Conduct, like its inspiration from the Portland Python User Group, is licensed under the Creative Commons Zero license.</p>
+    </div>
+</section>
 
 {# Sponsors #}
 
-<div class="container">
-    <section class="section" id="sponsors">
-        <h1 class="title">Sponsors</h1>
-        https://pragprog.com/
-    </section>
-</div>
+<section class="section is-medium" id="sponsors">
+    <div class="container">
+        <div class="has-text-centered">
+            <h1 class="title is-2">Sponsors</h1>
+        </div>
+        <div class="columns">
+            <div class="column is-one-half">
+                Sage
+                https://sage.com/
+            </div>
+            <div class="column is-one-half">
+                Pragmatic Programmers
+                https://pragprog.com/
+            </div>
+        </div>
+    </div>
+</section>
 
-Sage
-
-
-Pragmatic Programmers
-
-
-{# What #}
-
-<p>We meet on the third Wednesday of every month except in December where we meet on the second Wednesday.</p>
-<p>Each meeting usually consists of two one hour long sessions from speakers from the UK, Europe and beyond. One session will 
-cover a Development topic and the second an IT Pro topic.</p>
-<p>In between, there is a 30 minute break for food, refreshments and time for you to chat with the other attendees.</p>
+<section class="section is-medium" id="organizers">
+    <div class="container">
+        <div class="has-text-centered">
+            <h1 class="title is-2">About the organizers</h1>
+        </div>
+    </div>
+</section>

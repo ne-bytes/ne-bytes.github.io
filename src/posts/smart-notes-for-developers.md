@@ -5,7 +5,7 @@ date: 2023-01-17
 
 ## NE Bytes 25th January 2023 @ 19:00 - 20:30 GMT
 
-Join us for our first event of 2023 with Sam Hogarth
+We're back from our long winter rest and pleased to have Sam Hogarth with us for our first event of 2023!
 
 
 ### Smart Notes for Developers
@@ -34,5 +34,9 @@ the web, places a strong focus on ability and technical practices such as CD and
 
 * [Sam on Mastadon](https://hachyderm.io/@samhogy@mastodon.social)
 * [Sam on Twitter](https://twitter.com/samhogy)
+
+### Register
+
+[Register at Ti.to](https://ti.to/ne-bytes/january-2023-smart-notes-for-developers)
 
 Published on: {{ page.date.toDateString() }}
