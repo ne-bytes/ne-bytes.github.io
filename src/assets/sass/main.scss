@@ -14,3 +14,7 @@ $primary: $blue;
 $warning: $gold;
 
 @import "../../../node_modules/bulma/bulma.sass";
+
+#where {
+    background-image: url(/img/quayside-narrow.jpg);
+}
