@@ -11,6 +11,17 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget('./src/assets/css/');
     eleventyConfig.addPassthroughCopy( { './src/assets/js/': 'js' });
     eleventyConfig.addPassthroughCopy( { './src/assets/img/': 'img' });
+    
+    // fontawesome css
+    eleventyConfig.addPassthroughCopy( { './src/assets/fontawesome/css/fontawesome.css': '/css/fontawesome.css' });
+    eleventyConfig.addPassthroughCopy( { './src/assets/fontawesome/css/brands.css': '/css/brands.css' });
+    eleventyConfig.addPassthroughCopy( { './src/assets/fontawesome/css/solid.css': '/css/solid.css' });
+    eleventyConfig.addPassthroughCopy( { './src/assets/fontawesome/webfonts/': 'webfonts' });
+
+    // Watch CSS files for changes
+    eleventyConfig.setBrowserSyncConfig({
+        files: './docs/css/**/*.css'
+    });
 
     // Filters
     Object.keys(filters).forEach(filterName => {

@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* brand colours 
+*/
+
+$blue: #0390FF;
+$gold: #FFD700;  
+
+/* Set Bulma global variables
+*/
+
+$primary: $blue;
+$warning: $gold;
+
+@import "../../../node_modules/bulma/bulma.sass";

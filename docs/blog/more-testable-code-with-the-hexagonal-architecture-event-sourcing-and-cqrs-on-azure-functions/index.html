@@ -2,60 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More Testable Code with the Hexagonal Architecture + Event Sourcing and CQRS on Azure Functions</title>
-    <link rel="canonical" href="https://ne-bytes.github.io/" />
-    <meta property="og:site_name" content="NE Bytes" />
-    <meta property="og:title" content="The .NET developer community in the North East of the UK" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://ne-bytes.github.io/" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta property="og:image" content="https://ne-bytes.github.io/img/social-share.png" />
-    <meta property="og:image:alt" content="Page image for NE Bytes" />
-    <meta name="twitter:image" content="https://ne-bytes.github.io/img/social-share.png" />
-    <meta name="twitter:image:alt" content="Page image for NE Bytes" />
-    <meta name="description" content="NE Bytes is a user group covering the North East and Cumbria in the UK. We have technical meetings covering Development and IT Pro topics every month." />
-    <meta name="twitter:description" content="NE Bytes is a user group covering the North East and Cumbria in the UK. We have technical meetings covering Development and IT Pro topics every month." />
-    <meta property="og:description" content="NE Bytes is a user group covering the North East and Cumbria in the UK. We have technical meetings covering Development and IT Pro topics every month." />
-    <link rel="stylesheet" href="https://ne-bytes.github.io/css/bulma.min.css">
-    <link rel="stylesheet" href="https://ne-bytes.github.io/css/main.css">
-    <link rel="icon" href="https://ne-bytes.github.io/favicon.ico">
-    <link rel="manifest" href="https://ne-bytes.github.io/site.webmanifest" />
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>More Testable Code with the Hexagonal Architecture + Event Sourcing and CQRS on Azure Functions</title>
+<link rel="canonical" href="https://ne-bytes.github.io/" />
+<meta property="og:site_name" content="NE Bytes" />
+<meta property="og:title" content="The .NET developer community in the North East of the UK" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ne-bytes.github.io/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:image" content="https://ne-bytes.github.io/img/social-share.png" />
+<meta property="og:image:alt" content="Page image for NE Bytes" />
+<meta name="twitter:image" content="https://ne-bytes.github.io/img/social-share.png" />
+<meta name="twitter:image:alt" content="Page image for NE Bytes" />
+<meta name="description" content="NE Bytes is a user group covering the North East and Cumbria in the UK. We have technical meetings covering Development and IT Pro topics every month." />
+<meta name="twitter:description" content="NE Bytes is a user group covering the North East and Cumbria in the UK. We have technical meetings covering Development and IT Pro topics every month." />
+<meta property="og:description" content="NE Bytes is a user group covering the North East and Cumbria in the UK. We have technical meetings covering Development and IT Pro topics every month." />
+<link rel="stylesheet" href="https://ne-bytes.github.io/css/main.css">
+<link href="https://ne-bytes.github.io/css/fontawesome.css" rel="stylesheet">
+<link href="https://ne-bytes.github.io/css/brands.css" rel="stylesheet">
+<link href="https://ne-bytes.github.io/css/solid.css" rel="stylesheet">
+<link rel="icon" href="https://ne-bytes.github.io/favicon.ico">
+<link rel="manifest" href="https://ne-bytes.github.io/site.webmanifest" />
 <head>
 <body>
     <nav class="navbar is-transparent is-light" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item" href="https://ne-bytes.github.io"><img src="https://ne-bytes.github.io/img/logo.webp" ></a>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarExpanded">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
+    <div class="navbar-brand">
+        <a class="navbar-item" href="https://ne-bytes.github.io"><img src="https://ne-bytes.github.io/img/logo.webp" ></a>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarExpanded">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+    
+    <div id="navbarExpanded" class="navbar-menu">
+        <div class="navbar-start">
         
-        <div id="navbarExpanded" class="navbar-menu">
-            <div class="navbar-start">
-            
-                <!-- <a class="navbar-item" href="https://ne-bytes.github.io/index.html#who">About Us</a> -->
-                <a class="navbar-item" href="https://ne-bytes.github.io/index.html#what">Next Meeting</a>
-                <a class="navbar-item" href="https://ne-bytes.github.io/index.html#where">Location</a>
-                <a class="navbar-item" href="https://ne-bytes.github.io/index.html#code">Code of Conduct</a>
-                <a class="navbar-item" href="https://ne-bytes.github.io/index.html#sponsors">Sponsors</a>
-                <a class="navbar-item" href="https://ne-bytes.github.io/blog/">Events</a>
-            </div>
+            <!-- <a class="navbar-item" href="https://ne-bytes.github.io/index.html#who">About Us</a> -->
+            <a class="navbar-item" href="https://ne-bytes.github.io/index.html#what">Next Meeting</a>
+            <a class="navbar-item" href="https://ne-bytes.github.io/index.html#where">Location</a>
+            <a class="navbar-item" href="https://ne-bytes.github.io/index.html#code">Code of Conduct</a>
+            <a class="navbar-item" href="https://ne-bytes.github.io/index.html#sponsors">Sponsors</a>
+            <a class="navbar-item" href="https://ne-bytes.github.io/blog/">Events</a>
         </div>
-      </div>
-    </nav>
+    </div>
+    </div>
+</nav>
 
     <main>
         
-        <section class="hero is-default is-bold is-info">
-            <div class="hero-body">
-                <p class="title">NE Bytes</p>
-                <p class="subtitle">NE Bytes is a user group covering the North East and Cumbria in the UK. We have technical meetings covering Development and IT Pro topics every month.</p>
-            </div>
-        </section>
+<section class="hero is-default is-primary">
+    <div class="hero-body">
+        <p class="title has-text-warning">NE Bytes</p>
+        <p class="subtitle">NE Bytes is a user group covering the North East and Cumbria in the UK. We have technical meetings covering Development and IT Pro topics every month.</p>
+    </div>
+</section>
          
 
 This month we have two awesome talks for you. 
@@ -105,14 +107,16 @@ Sourcing (by way of CQRS), and has developed a Visual Studio plug-in to for crea
 * https://twitter.com/Merrion
 
     </main>
-    <footer class="footer has-background-dark">
-        <section class="container">
-            <ul>
-                <li><span>See events on <a class="navbar-item" href="http://ti.to/ne-bytes/">Tito</a></span></li>
-                <li><span>Follow us on <a class="navbar-item" href="https://twitter.com/NEBytes">Twitter</a></span></li>
-                <li><span>See past events on <a class="navbar-item" href="https://www.youtube.com/channel/UCz2PY_ZF0eDv19eeOead2UQ">You Tube</a></span></li>
-            </ul>
-        </section>    
-    </footer>
+
+    <footer class="footer has-background-dark has-text-light">
+    <section class="container">
+        <ul>
+            <li>Register for upcoming events on <a href="http://ti.to/ne-bytes/" target="_blank" rel="noopener noreferrer">Tito</a></li>
+            <li>Follow us on <span class="icon"><i class="fa-brands fa-twitter"></i></span><a href="https://twitter.com/NEBytes" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            <li>See our past events on <span class="icon"><i class="fa-brands fa-youtube"></i></span><a href="https://www.youtube.com/channel/UCz2PY_ZF0eDv19eeOead2UQ" target="_blank" rel="noopener noreferrer">You Tube</a></li>
+        </ul>
+    </section>    
+</footer>
+
 </body>    
 </html>

@@ -30,24 +30,26 @@ title: NE Bytes
         <div class="has-text-centered">
             <h1 class="title is-2">Location</h1>
         </div>
-        <p>We have been a virtual group meeting through Microsoft Teams since the start of the 
+        <div class="notification">
+            We have been a virtual group meeting through Microsoft Teams since the start of the 
             COVID-19 pandemic. We will remain virtual for the short-tem but regularly re-evaluate 
             with the hope of going back to in-person meet-ups soon. 
-        </p>
-        {# TODO - need to draw attention to this !#}
-        <p>We need a new venue! If you can offer us space for one evening a month, please <a href="{{ meta.email }}">get in touch</a>.</p>
-
-        {# TODO - need to draw attention to this !#}
-        <p>We meet on the third Wednesday of every month except in December where we meet on the second Wednesday.</p>
-        <p>Each meeting usually consists of two one hour long sessions from speakers from the UK, Europe and beyond. One session will 
-        cover a Development topic and the second an IT Pro topic.</p>
-        <p>In between, there is a 30 minute break for food, refreshments and time for you to chat with the other attendees.</p>
-       
+        </div>
+        <div class="notification">
+            <p>We meet on the third Wednesday of every month except in December where we meet on the second Wednesday.</p>
+            <p>Each meeting usually consists of two one hour long sessions from speakers from the UK, Europe and beyond. One session will 
+            cover a Development topic and the second an IT Pro topic. In between the talks, there is a 30 minute break for food, refreshments 
+            and time for you to chat with the other attendees.</p>
+       </div>
+       <div class="notification is-warning">
+        We are looking for a new in-person venue! If you can offer us space for one evening a month, please <a href="{{ meta.email }}">get in touch</a>.
     </div>
+
+</div>
 </section>
 
 {# Code of Conduct #}
-<section class="section is-medium" id="code">
+<section class="section is-medium has-background-" id="code">
     <div class="container">
         <div class="has-text-centered">
             <h1 class="title is-2">Code of Conduct</h1>
@@ -75,16 +77,17 @@ title: NE Bytes
 <section class="section is-medium" id="sponsors">
     <div class="container">
         <div class="has-text-centered">
-            <h1 class="title is-2">Sponsors</h1>
+            <h1 class="title is-2">Our Sponsors</h1>
         </div>
         <div class="columns">
             <div class="column is-one-half">
-                Sage
-                https://sage.com/
+                Sage is the proud market leader in cloud business management solutions supporting millions of small and medium size businesses globally.
+                <a href="https://sage.com/">Sage</a>
             </div>
             <div class="column is-one-half">
-                Pragmatic Programmers
-                https://pragprog.com/
+                Pragmatic Programmers create timely, practical books, audio books and videos on classic and cutting-edge topics to help you learn and p
+                ractice your craft, and accelerate your career.
+                <a href="https://pragprog.com/">Pragmatic Programmers</a>
             </div>
         </div>
     </div>
@@ -94,6 +97,11 @@ title: NE Bytes
     <div class="container">
         <div class="has-text-centered">
             <h1 class="title is-2">About the organizers</h1>
+
+            <figure class="image is-128x128">
+                <img class="is-rounded" src="{{ meta.url }}/img/derek.webp">
+            </figure>
+
             Derek Graham
             Derek Graham is a Principal Developer at Sage UK, helping to deliver cloud-based business solutions in .Net on Azure. He 
             has experience in real-time motion control, ERP stock control and barcoding systems, software licensing, developer tooling 
@@ -103,6 +111,10 @@ title: NE Bytes
 Blog: http://deejaygraham.github.io
 
 Twitter: http://twitter.com/deejaygraham
+
+<figure class="image is-128x128">
+    <img class="is-rounded" src="{{ meta.url }}/img/brett.jpg">
+</figure>
 
 Brett Miller 
 
