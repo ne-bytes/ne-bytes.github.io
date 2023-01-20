@@ -22,6 +22,7 @@
     "markdown-it-anchor": "^8.6.6"
   },
   "dependencies": {
-    "bulma": "^0.9.4"
+    "bulma": "^0.9.4",
+    "nunjucks-date": "^1.5.0"
   }
 }

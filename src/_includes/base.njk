@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{ meta.url }}/css/bulma.min.css">
     <link rel="stylesheet" href="{{ meta.url }}/css/main.css">
     <link rel="icon" href="{{ meta.url }}/favicon.ico">
-    <link rel="manifest" href="{{ meta.url }}/app.webmanifest" />
+    <link rel="manifest" href="{{ meta.url }}/site.webmanifest" />
 <head>
 <body>
     <nav class="navbar is-transparent is-light" role="navigation" aria-label="main navigation">
@@ -49,6 +49,13 @@
     </nav>
 
     <main>
+        {# TODO Match colours to logo #}
+        <section class="hero is-default is-bold is-info">
+            <div class="hero-body">
+                <p class="title">{{ meta.siteName }}</p>
+                <p class="subtitle">{{ meta.siteDescription }}</p>
+            </div>
+        </section>
         {{ content | safe }}
     </main>
     <footer class="footer has-background-dark">

@@ -1,0 +1,51 @@
+---
+title: 'More Testable Code with the Hexagonal Architecture + Event Sourcing and CQRS on Azure Functions'
+date: 2022-06-16
+time: '18:30 - 21:00 BST'
+--- 
+
+This month we have two awesome talks for you. 
+
+## More Testable Code with the Hexagonal Architecture
+
+Hexagonal Architecture provides a set of simple and specific rules to organize your system's code. These rules make it easier to test your code, as well as 
+being a good fit for incorporating Domain-Driven Design. In this talk, we'll look at how Hexagonal Architecture differs from typical architectures. We'll 
+then dive into how Hexagonal Architecture leverages the idea of Separation of Concerns to make testing easier. We'll see how the architecture uses Ports & 
+Adapters (another name for this architecture) to improve the design by clearly defining how external resources connect to the core of our application's logic.
+
+
+### Ted M. Young
+
+Ted M. Young (known as JitterTed on social media) is a Java trainer, coding coach, speaker, and author. He's been in software development for over 30 years, 
+doing eXtreme Programming since 2000. Ted has worked for eBay, Google, Apple, and Guidewire Software. He is now an independent educator, helping those new to 
+the industry and experienced folks increase their joy in coding by making code more testable. Ted's favorite techniques are test-driven development, refactoring, 
+domain-driven design, and Hexagonal Architecture.
+
+* https://twitter.com/jitterted
+* https://www.subscribepage.com/maketestable
+
+
+## Event Sourcing and CQRS on Azure Functions 
+
+In this talk I outline a system built using Azure serverless functions and event grid, the CQRS architecture and with the underlying entity storage being 
+by event sourcing. The prototype shows how this allows you to assemble a highly performant, geographically distributed system which scales up and down rapidly for 
+an extremely small cost.
+
+CQRS is an application design pattern (or architecture) that differs from single model architectures (like MVC or MVVM) in that the parts of the system responsible 
+for changing the state of the system (the Command side) is entirely separate to the parts of the system responsible for getting the state of the system (the Query side).
+
+Event Sourcing is a data architecture that flips the way we store data on its head. Instead of storing the state of any given object as it currently is and 
+updating that state, we instead store the complete history of every change that has occurred to the object and allow us to derive the state of the object by 
+running code known as a projection over that event history.
+
+Azure Event Grid is a set of connected technologies provided by Microsoft as part of their Azure cloud which are designed to facilitate an event-driven 
+architecture. It consists of event triggers that can be set up to either fire on a state change event and these triggers are linked by the Event Grid to 
+route the events from their trigger to a destination - and azure serverless function.
+
+
+### Duncan Jones
+
+A .NET developer with a background in the financial services industry. He has a personal interest in highly scalable systems, which has lead to Event 
+Sourcing (by way of CQRS), and has developed a Visual Studio plug-in to for creating CQRS and Event Sourcing based systems via a visual interface.
+
+* https://twitter.com/Merrion
