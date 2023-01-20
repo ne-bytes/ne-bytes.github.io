@@ -3,21 +3,13 @@ layout: "base.njk"
 title: NE Bytes
 ---
 
-{# Intro #}
-{#<div class="container">
-<section class="section" id="who">
-    <p>{{ meta.siteDescription }}</p>
-    </section>
-</div>
-#}
-
 {# Most Recent Blog Post #}
-<section class="section is-medium" id="what">
+<section class="section is-medium has-background-primary-light" id="what">
     <div class="container">
         {% set latest_posts = collections.posts | reverse %}
         {% for post in latest_posts.slice(0,1) %}
-        <div class="has-text-centered">
-            <h1 class="title is-2"><a href="{{ meta.url }}{{ post.url }}">{{ post.data.title }}</a></h1>
+        <div class="has-text-left mb-6">
+            <h1 class="title is-2 has-text-weight-bold"><span class="icon has-text-info"><i class="fa-solid fa-calendar fa-2x"></i></span><a href="{{ meta.url }}{{ post.url }}">{{ post.data.title }}</a></h1>
         </div>
         {{ post.templateContent | safe }}
         {% endfor %}
@@ -27,8 +19,8 @@ title: NE Bytes
 {# Location #}
 <section class="section is-medium has-background-light" id="where">
     <div class="container">
-        <div class="has-text-centered">
-            <h1 class="title is-2">Location</h1>
+        <div class="has-text-left mb-6">
+            <h1 class="title is-2 has-text-weight-bold">Location</h1>
         </div>
         <div class="notification">
             We have been a virtual group meeting through Microsoft Teams since the start of the 
@@ -49,10 +41,10 @@ title: NE Bytes
 </section>
 
 {# Code of Conduct #}
-<section class="section is-medium has-background-" id="code">
+<section class="section is-medium has-background-danger-light" id="code">
     <div class="container">
-        <div class="has-text-centered">
-            <h1 class="title is-2">Code of Conduct</h1>
+        <div class="has-text-left mb-6">
+            <h1 class="title is-2 has-text-weight-bold">Code of Conduct</h1>
         </div>
         <p>With thanks to the <a href="https://www.meetup.com/pdxpython/pages/12061872/Code_of_Conduct/">Portland Python User Group</a></p>
         <p>NE Bytes is dedicated to providing a harassment-free community for everyone, regardless of sex, gender identity or expression, sexual 
@@ -74,20 +66,22 @@ title: NE Bytes
 
 {# Sponsors #}
 
-<section class="section is-medium" id="sponsors">
+<section class="section is-medium has-background-success-light" id="sponsors">
     <div class="container">
-        <div class="has-text-centered">
-            <h1 class="title is-2">Our Sponsors</h1>
+        <div class="has-text-left mb-4">
+            <h1 class="title is-2 has-text-weight-bold">Our Sponsors</h1>
         </div>
+        <p class="mb-6">Thanks to our sponsors for helping make this meetup happen! Interested in sponsoring? Contact us <a href="{{ meta.email }}">by email</a>.</p>
         <div class="columns">
-            <div class="column is-one-half">
-                Sage is the proud market leader in cloud business management solutions supporting millions of small and medium size businesses globally.
-                <a href="https://sage.com/">Sage</a>
+            <div class="column is-one-half has-text-centered">
+                <figure class="image is-128x128">
+                    <a href="https://sage.com/"><img src="{{ meta.url }}/img/sage-logo-green.svg"></a>
+                  </figure>
             </div>
-            <div class="column is-one-half">
-                Pragmatic Programmers create timely, practical books, audio books and videos on classic and cutting-edge topics to help you learn and p
-                ractice your craft, and accelerate your career.
-                <a href="https://pragprog.com/">Pragmatic Programmers</a>
+            <div class="column is-one-half has-text-centered">
+                <figure class="image is-128x128">
+                    <a href="https://pragprog.com/"><img src="{{ meta.url }}/img/pragprog.svg"></a>
+                  </figure>
             </div>
         </div>
     </div>
@@ -95,33 +89,56 @@ title: NE Bytes
 
 <section class="section is-medium" id="organizers">
     <div class="container">
-        <div class="has-text-centered">
-            <h1 class="title is-2">About the organizers</h1>
+        <div class="has-text-left mb-6">
+            <h1 class="title is-2 has-text-weight-bold">About the organizers</h1>
+        </div>    
+        
+        <div class="card mb-6">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="{{ meta.url }}/img/derek.webp" alt="Derek Graham">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">Derek Graham</p>
+                        </div>
+                </div>
+                <div class="content">
+                    Derek Graham is a Principal Developer at Sage UK, helping to deliver cloud-based business solutions in .Net on Azure. He 
+                    has experience in real-time motion control, ERP stock control and barcoding systems, software licensing, developer tooling 
+                    and shrink-wrapped software. His main areas of interest are in using agile methods to help improve what we ship, XP, TDD, 
+                    continuous and deliberate learning, visual thinking, design and, of course, code.
+                </div>
+                <footer class="card-footer">
+                    <a href="http://deejaygraham.github.io" class="card-footer-item">Blog</a>
+                    <a href="http://twitter.com/deejaygraham" class="card-footer-item">Twitter</a>
+                    <a href="https://hachyderm.io/@deejaygraham" class="card-footer-item">Mastadon</a>
+                </footer>
+            </div>
+        </div>
 
-            <figure class="image is-128x128">
-                <img class="is-rounded" src="{{ meta.url }}/img/derek.webp">
-            </figure>
-
-            Derek Graham
-            Derek Graham is a Principal Developer at Sage UK, helping to deliver cloud-based business solutions in .Net on Azure. He 
-            has experience in real-time motion control, ERP stock control and barcoding systems, software licensing, developer tooling 
-            and shrink-wrapped software. His main areas of interest are in using agile methods to help improve what we ship, XP, TDD, 
-            continuous and deliberate learning, visual thinking, design and, of course, code.
-
-Blog: http://deejaygraham.github.io
-
-Twitter: http://twitter.com/deejaygraham
-
-<figure class="image is-128x128">
-    <img class="is-rounded" src="{{ meta.url }}/img/brett.jpg">
-</figure>
-
-Brett Miller 
-
-Brett is a music obsessed, Microsoft MVP and Platform Engineer at Capgemini
-
-https://twitter.com/BrettMiller_IT
-
+        <div class="card mb-6">
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img class="is-rounded" src="{{ meta.url }}/img/brett.jpg" alt="Brett Miller">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">Brett Miller</p>
+                        </div>
+                </div>
+                <div class="content">
+                    Brett is a music obsessed, Microsoft MVP and Platform Engineer at Capgemini
+                </div>
+                <footer class="card-footer">
+                    <a href="https://millerb.co.uk" class="card-footer-item">Blog</a>
+                    <a href="https://twitter.com/BrettMiller_IT" class="card-footer-item">Twitter</a>
+                </footer>
+            </div>
         </div>
 
         <p>NE Bytes has had a few organizers over it's lifetime. You can read about the founders in <a href="{{ meta.url }}/hall-of-fame/">The Hall of Fame</a>.</p>
