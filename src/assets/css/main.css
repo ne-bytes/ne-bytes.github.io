@@ -10285,6 +10285,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   padding: 3rem 1.5rem 6rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 #where {
   background-image: url(/img/quayside-narrow.jpg);
 }

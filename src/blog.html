@@ -7,16 +7,14 @@ title: NE Bytes Events
 {% if newEvents and newEvents.length > 0 %}
 <section class="section" id="events">
     <div class="container">
-        <div class="has-text-centered">
+        <div class="has-text-left mb-6">
             <h1 class="title is-2">Events</h1>
+            <h2 class="subtitle">Don't miss an event, <a href="{{ meta.social.tito }}">register at our wvents page on Tito</a></h2>
         </div>
-        <p>Don't miss an event, register at our <a href="{{ meta.social.tito }}">events page on Tito</a></p>
-
-        <ul>
         {% for event in newEvents %}
-            <li><a href="{{ meta.url }}{{ event.url }}">{{ event.data.title }}</a></li>
+        {% if event.data.date %}<span class="icon"><i class="fas fa-calendar"></i></span> {{ event.data.date | readableDate }} {% if event.data.time %} {{ event.data.time }} {% endif %}{% endif %} 
+        <p><a href="{{ meta.url }}{{ event.url }}">{{ event.data.title }}</a></p>
         {% endfor %}
-        </ul>
     </div>
 </section> 
 {% endif %}
@@ -25,15 +23,14 @@ title: NE Bytes Events
 {% if oldEvents and oldEvents.length > 0 %}
 <section class="section" id="events">
     <div class="container">
-        <div class="has-text-centered">
+        <div class="has-text-left mb-6">
             <h1 class="title is-2">Past Events</h1>
         </div>
 
-        <ul>
         {% for event in oldEvents %}
-            <li><a href="{{ meta.url }}{{ event.url }}">{{ event.data.title }}</a></li>
+            {% if event.data.date %}<span class="icon"><i class="fas fa-calendar"></i></span> {{ event.data.date | readableDate }} {% if event.data.time %} {{ event.data.time }} {% endif %}{% endif %} 
+           <p><a href="{{ meta.url }}{{ event.url }}">{{ event.data.title }}</a></p>
         {% endfor %}
-        </ul>
     </div>
 </section> 
 {% endif %}
