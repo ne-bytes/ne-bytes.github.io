@@ -22,23 +22,46 @@ page.data.recording: 'youtube'
 
     <main>
         {% include 'hero.njk' %}
-        <section class="section is-medium">
+
+        <section class="section">
             <div class="container">
-                <div class="has-text-left mb-6">
-                    <h1 class="title is-2 has-text-weight-bold">{{ page.data.title }}</h1>
-                    {% if page.data.date %}<h2 class="subtitle"><span class="icon"><i class="fas fa-calendar"></i></span> {{ page.data.date | readableDate }} {% if page.data.time %} {{ page.data.time }} {% endif %}</h2>{% endif %} 
-                    <p>
-                    {% if page.data.register %}Please <a href="{{ page.data.register }}">register here</a> {% endif %}
-                    {% if page.data.calendar %}and <a href="{{ page.data.calendar }}">add the event to your calendar</a>{% endif %}
-                    </p>
-                    {% if page.data.meeting %}
-                    <h2 class="subtitle">Teams Meeting Link</h2>
-                    <p>
-                        <a href="{{ page.data.meeting }}">Join the event here</a>        
-                    </p>
-                    {% endif %}
+                <div class="card">
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                            <figure class="image is-48x48">
+                                <img src="{{ meta.url }}/img/logo.webp" alt="NE Bytes logo">
+                            </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4">{{ title }}</p>
+                                <p class="subtitle is-6"><a href="{{ meta.url}}/speakers/{{ speaker | slugify }}/">{{ speaker }}</a></p>
+                            </div>
+                        </div>
+                
+                        <div class="content">
+                            {% if date %}<span class="icon"><i class="fas fa-calendar"></i></span><time datetime="{{ date }}">{{ date | readableDate }} {% if time %} {{ time }} {% endif %}</time>{% endif %} 
+                            <p>
+                            {% if register %}Please <a href="{{ register }}">register here</a> {% endif %}
+                            {% if calendar %}and <a href="{{ calendar }}">add the event to your calendar</a>{% endif %}
+                            </p>
+                            {% if meeting %}
+                            <h2 class="subtitle">Teams Meeting Link</h2>
+                            <p>
+                                <a href="{{ meeting }}">Join the event here</a>        
+                            </p>
+                            {% endif %}
+                            {% if recording %}
+                            <h2 class="subtitle">YouTube</h2>
+                            <p>
+                                The recording of this session is <a href="{{ recording }}">available on YouTube</a>        
+                            </p>
+                            {% endif %}
+                            <hr />
+                            {{ content | safe }}
+                        </div>
+                    </div>
                 </div>
-            {{ content | safe }}
             </div>
         </section>    
     </main>

@@ -10,35 +10,33 @@ title: NE Bytes
         {% for post in latest_posts.slice(0,1) %}
         <div class="card">
             <div class="card-content">
-            <div class="media">
-                <div class="media-left">
-                <figure class="image is-48x48">
-                    <img src="{{ meta.url }}/img/logo.webp" alt="NE Bytes logo">
-                </figure>
+                <div class="media">
+                    <div class="media-left">
+                    <figure class="image is-48x48">
+                        <img src="{{ meta.url }}/img/logo.webp" alt="NE Bytes logo">
+                    </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">{{ post.data.title }}</p>
+                        <p class="subtitle is-6"><a href="{{ meta.url}}/speakers/{{ post.data.speaker | slugify }}/">{{ post.data.speaker }}</a></p>
+                    </div>
                 </div>
-                <div class="media-content">
-                    <p class="title is-4">{{ post.data.title }}</p>
-                    <p class="subtitle is-6">{% if post.data.speakerlink %}<a href="{{ meta.url}}/speakers/{{ post.data.speakerlink }}/">{% endif %} {{ post.data.speaker }}{% if post.data.speakerlink %}</a>{% endif %}</p>
-                </div>
-            </div>
         
-            <div class="content">
-                {% if post.data.date %}<span class="icon"><i class="fas fa-calendar"></i></span> {{ post.data.date | readableDate }} {% if post.data.time %} {{ post.data.time }} {% endif %}{% endif %} 
-                <p>
-                {% if post.data.register %}Please <a href="{{ post.data.register }}">register here</a> {% endif %}
-                {% if post.data.calendar %}and <a href="{{ post.data.calendar }}">add the event to your calendar</a>{% endif %}
-                </p>
-                {% if post.data.meeting %}
-                <h2 class="subtitle">Teams Meeting Link</h2>
-                <p>
-                    <a href="{{ post.data.meeting }}">Join the event here</a>        
-                </p>
-                {% endif %}
-                <hr />
-                {{ post.templateContent | safe }}
-                <hr />
-                <time datetime="{{ post.data.date }}">{% if post.data.time %} {{ post.data.time }} {% endif %} {% if post.data.date %} {{ post.data.date | readableDate }}{% endif %} </time>
-            </div>
+                <div class="content">
+                    {% if post.data.date %}<span class="icon"><i class="fas fa-calendar"></i></span><time datetime="{{ post.data.date }}">{{ post.data.date | readableDate }} {% if post.data.time %} {{ post.data.time }} {% endif %}</time>{% endif %} 
+                    <p>
+                    {% if post.data.register %}Please <a href="{{ post.data.register }}">register here</a> {% endif %}
+                    {% if post.data.calendar %}and <a href="{{ post.data.calendar }}">add the event to your calendar</a>{% endif %}
+                    </p>
+                    {% if post.data.meeting %}
+                    <h2 class="subtitle">Teams Meeting Link</h2>
+                    <p>
+                        <a href="{{ post.data.meeting }}">Join the event here</a>        
+                    </p>
+                    {% endif %}
+                    <hr />
+                    {{ post.templateContent | safe }}
+                </div>
             </div>
         </div>
         {% endfor %}
