@@ -10289,4 +10289,12 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-image: url(/img/quayside-narrow.jpg);
 }
 
+p {
+  margin-bottom: 1em;
+}
+
+#what {
+  padding-left: 0;
+}
+
 /*# sourceMappingURL=main.css.map */

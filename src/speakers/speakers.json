@@ -1,0 +1,5 @@
+{
+    "layout": "base.njk",
+    "tags": "speakers",
+    "permalink": "/speakers/{{ title | slugify }}/index.html"
+}
