@@ -27,10 +27,31 @@ title: NE Bytes Events
             <h1 class="title is-2">Past Events</h1>
         </div>
 
+        {% set currentYear = "" %}
         {% for event in oldEvents %}
-            {% if event.data.date %}<span class="icon"><i class="fas fa-calendar"></i></span> {{ event.data.date | readableDate }} {% if event.data.time %} {{ event.data.time }} {% endif %}{% endif %} 
-           <p><a href="{{ meta.url }}{{ event.url }}">{{ event.data.title }}</a></p>
+            {% set postYear = event.date.getFullYear() %}
+            {% if currentYear != postYear %}
+                {% set currentYear = postYear %}
+                <hr />
+                <h2 class="subtitle">{{ postYear }}</h3>
+            {% endif %}
+            {% if event.data.date %}<span class="icon"><i class="fas fa-calendar"></i></span> {{ event.data.date | readableDate }}{% endif %} 
+            <p><a href="{{ meta.url }}{{ event.url }}">{{ event.data.title }}</a></p>
         {% endfor %}
     </div>
 </section> 
 {% endif %}
+
+
+{% for post in postslist | reverse %}
+{% if showYear %}
+      {% set postYear = post.date.getFullYear() %}
+      {% if currentYear != postYear %}
+      {% set currentYear = postYear %}
+      <h3>{{ postYear }}</h3>
+      {% endif %}
+{% endif %}
+  <li class=" mb-10 list-none">
+    <h2><a href="{{ post.url | url }}">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></h2>
+  </li>
+{% endfor %}
