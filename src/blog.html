@@ -9,7 +9,7 @@ title: NE Bytes Events
     <div class="container">
         <div class="has-text-left mb-6">
             <h1 class="title is-2">Events</h1>
-            <h2 class="subtitle">Don't miss an event, <a href="{{ meta.social.tito }}">register at our wvents page on Tito</a></h2>
+            <h2 class="subtitle">Don't miss an event, <a href="{{ meta.social.tito }}">register at our events page on Tito</a></h2>
         </div>
         {% for event in newEvents %}
         {% if event.data.date %}<span class="icon"><i class="fas fa-calendar"></i></span> {{ event.data.date | readableDate }} {% if event.data.time %} {{ event.data.time }} {% endif %}{% endif %} 
