@@ -6,7 +6,7 @@ module.exports = {
     social: {
         tito: 'http://ti.to/ne-bytes/',
         twitter: 'https://twitter.com/NEBytes',
-        youtube: 'https://www.youtube.com/channel/UCz2PY_ZF0eDv19eeOead2UQ'
+        youtube: 'https://www.youtube.com/@nebytes'
     },
     email: 'mailto:nebytes.events@gmail.com'
 };
