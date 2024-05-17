@@ -1,4 +1,4 @@
-window.onload = function() 
+window.onload = function() {
 // if page event date.
   const eventDate = document.getElementById('event-date');
 
