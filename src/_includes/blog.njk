@@ -46,13 +46,14 @@ page.data.recording: 'youtube'
                             <div id="event-registration">
                             {% if register %}Please <a href="{{ register }}">register here</a> {% endif %}
                             {% if calendar %}and <a href="{{ calendar }}">add the event to your calendar</a>{% endif %}
-                            </div>
+
                             {% if meeting %}
                             <h2 class="subtitle">Teams Meeting Link</h2>
                             <p>
                                 <a href="{{ meeting }}">Join the event here</a>        
                             </p>
                             {% endif %}
+                            </div>
 
                             {% if recording %}
                             <h2 class="subtitle">YouTube</h2>
