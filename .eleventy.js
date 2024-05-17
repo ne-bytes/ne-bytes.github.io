@@ -20,7 +20,7 @@ module.exports = function(eleventyConfig) {
 
     // Watch CSS files for changes
     eleventyConfig.setBrowserSyncConfig({
-        files: './docs/css/**/*.css'
+        files: './_site/css/**/*.css'
     });
 
     // Filters
@@ -30,8 +30,7 @@ module.exports = function(eleventyConfig) {
 
     return {
         dir: {
-            input: 'src',
-            output: 'docs'
+            input: 'src'
         },
         templateFormats: [ 'md', 'njk', 'html' ],
         markdownTemplateEngine: 'njk',
