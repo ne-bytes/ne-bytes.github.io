@@ -40,6 +40,7 @@ page.data.recording: 'youtube'
                         </div>
                 
                         <div class="content">
+{% if date < new Date() %} PAST !!!! {% else %} FUTURE !!! {% endif %}
                             {% if date %}<span class="icon"><i class="fas fa-calendar"></i></span><time datetime="{{ date }}">{{ date | readableDate }} {% if time %} {{ time }} {% endif %}</time>{% endif %} 
                             <p>
                             {% if register %}Please <a href="{{ register }}">register here</a> {% endif %}
