@@ -23,17 +23,20 @@ title: NE Bytes
                 </div>
         
                 <div class="content">
-                    {% if post.data.date %}<span class="icon"><i class="fas fa-calendar"></i></span><time datetime="{{ post.data.date }}">{{ post.data.date | readableDate }} {% if post.data.time %} {{ post.data.time }} {% endif %}</time>{% endif %} 
-                    <p>
+                    <div id="event-datetime">
+                    {% if post.data.date %}<span class="icon"><i class="fas fa-calendar"></i></span><time id="event-date" datetime="{{ post.data.date }}">{{ post.data.date | readableDate }} {% if post.data.time %} {{ post.data.time }} {% endif %}</time>{% endif %} 
+                    </div>
+                    <div id="event-registration">
                     {% if post.data.register %}Please <a href="{{ post.data.register }}">register here</a> {% endif %}
                     {% if post.data.calendar %}and <a href="{{ post.data.calendar }}">add the event to your calendar</a>{% endif %}
-                    </p>
+
                     {% if post.data.meeting %}
                     <h2 class="subtitle">Teams Meeting Link</h2>
                     <p>
                         <a href="{{ post.data.meeting }}">Join the event here</a>        
                     </p>
                     {% endif %}
+                    </div>
                     <hr />
                     {{ post.templateContent | safe }}
                 </div>
