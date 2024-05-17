@@ -1,5 +1,5 @@
 module.exports = {
-    url: process.env.URL || 'http://localhost:8080', // nebytes.co.uk or nebytes.net
+    url: /serve|watch/.test(process.argv.join()) ? "http://localhost:8080" : "https://ne-bytes.github.io",
     siteName: 'NE Bytes',
     siteTitle: 'The .NET developer community in the North East of the UK',
     siteDescription: 'Microsoft Technology Usergroup in the North East of England.',
