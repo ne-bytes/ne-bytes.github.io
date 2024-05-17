@@ -11,12 +11,9 @@
     <div id="navbarExpanded" class="navbar-menu">
         <div class="navbar-start">
         {# TODO - js to toggle burger #}
-            <!-- <a class="navbar-item" href="{{ meta.url }}/index.html#who">About Us</a> -->
-            <a class="navbar-item" href="{{ meta.url }}/index.html#what">Next Event</a>
-            <a class="navbar-item" href="{{ meta.url }}/index.html#where">Location</a>
-            <a class="navbar-item" href="{{ meta.url }}/index.html#code">Code of Conduct</a>
-            <a class="navbar-item" href="{{ meta.url }}/index.html#sponsors">Sponsors</a>
-            <a class="navbar-item" href="{{ meta.url }}/blog/">Events</a>
+        {% for item in nav %}
+          <a class="navbar-item" title="{{ item.name }}" href="{{ meta.url }}{{ item.url }}">{{ item.name }}</a>
+        {% endfor %}
         </div>
     </div>
     </div>
