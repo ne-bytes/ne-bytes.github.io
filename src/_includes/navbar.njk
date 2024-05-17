@@ -1,20 +1,25 @@
-<nav class="navbar is-transparent is-light" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="{{ meta.url }}"><img src="{{ meta.url }}/img/logo.webp" ></a>
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarExpanded">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-    </div>
-    {# Links - need canonical #}
-    <div id="navbarExpanded" class="navbar-menu">
-        <div class="navbar-start">
-        {# TODO - js to toggle burger #}
-        {% for item in nav %}
-          <a class="navbar-item" title="{{ item.name }}" href="{{ meta.url }}{{ item.url }}">{{ item.name }}</a>
-        {% endfor %}
-        </div>
-    </div>
-    </div>
-</nav>
+<header class="header">
+    <nav class="navbar is-transparent is-light" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="{{ meta.url }}">
+                    <img src="{{ meta.url }}/img/logo.webp" >
+                </a>
+                <a class="navbar-item" title="{{ meta.siteName }}" href="{{ meta.url }}">{{ meta.siteName }}</a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarExpanded">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarExpanded" class="navbar-menu">
+                <div class="navbar-end">
+                {# TODO - js to toggle burger #}
+                {% for item in nav %}
+                    <a class="navbar-item" title="{{ item.name }}" href="{{ meta.url }}{{ item.url }}">{{ item.name }}</a>
+                {% endfor %}
+                </div>
+            </div> 
+        </div> {# container #}
+    </nav>
+</header>
